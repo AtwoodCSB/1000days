@@ -1,0 +1,118 @@
+
+/* Global properties ======================================================== */
+body { 
+	background:#333333; 
+	text-align:left;
+}
+
+/* Global Structure ============================================================= */
+/* Header */
+#header{
+	position:absolute;
+	left:0px;
+	top:0px;
+	overflow:hidden;
+	color:#DDD;
+	height:70px;
+	font-family:courier;
+	font-style:italic;
+	font-size:35px;
+	background-color: #222222;margin: 0px auto;
+	width: 100%;
+}
+	
+#myContent{
+	position:absolute;
+	left:40px;
+	top:100px;
+	overflow:hidden;
+	text-shadow: 2px 3px 3px #000; 
+	font-family:courier;
+	font-style:italic;
+	font-size:20px;
+	color:#CCCCFF;
+}
+
+#container{
+	overflow:hidden;
+	position:absolute;
+	left:630px;
+	top:220px;
+	width:650px;
+}
+
+#title{
+	position:absolute;
+	left:35%;
+	top:0px;
+	padding:10px;
+	overflow:hidden;
+	color:#CCCCFF;
+}
+
+#footer {
+	position:absolute;
+	left:35%;
+	top:95%;
+	overflow:hidden;
+	text-shadow: 2px 3px 3px #000; 
+	font-family:courier;
+	font-style:italic;
+	font-size:20px;
+	color:#000;
+}
+
+
+
+#time{
+	position:absolute;
+	left:750px;
+	top:480px;
+	overflow:hidden;
+}
+
+#show{
+	color:#FFF;
+	text-shadow: 2px 3px 3px #000; 
+	font-family:courier;
+	font-style:italic;
+	font-size:20px;
+}
+
+
+#bg{
+	overflow:hidden;
+}
+
+.roundabout-holder  { 
+	width:600px;
+	height:400px;
+	margin:0 auto;
+}
+.roundabout-moveable-item {
+	width: 350px;
+	height: 222px;
+	cursor: pointer;
+	border:3px solid #ccc;
+	border:3px solid rgba(0, 0, 0, 0.08);
+    border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+.roundabout-moveable-item img{
+	width:100%;
+}
+.roundabout-in-focus {
+	border:3px solid rgba(0, 0, 0, 0.2);
+}
+
+ol, ul {
+	list-style: none;
+}
+
+img {
+	vertical-align:top; 
+}
+
+
+

@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>1000天纪念日</title>
+		<meta name="author" content="Mike">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<link rel="stylesheet" href="css/button.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/jquery-ui-1.css" type="text/css">
+		
+		<!--导库-->
+		<script type="text/javascript" src="jquery/jquery.js" ></script>
+		<script type="text/javascript" src="jquery/jquery-ui.js"></script>
+		<!-- 图片幻灯片效果-->
+		<script type="text/javascript" src="js/roundabout.js"></script>
+		<script type="text/javascript" src="js/roundabout_shapes.js"></script>
+		<script type="text/javascript" src="js/gallery_init.js"></script>
+		<!-- 下雪-->
+		<script type="text/javascript" src="js/snowstorm.js"></script>
+		<!-- 打字机效果-->		
+		<script type="text/javascript" src="js/text.js"></script>
+		<!-- 画爱心-->
+		<script type="text/javascript" src="js/ga.js" async=""></script>
+		<script type="text/javascript" src="js/heart.js"></script>
+		<!-- 移动div-->
+		<script type="text/javascript" src="js/move.js"></script>
+		<!-- 显示时间 -->
+		<script type="text/javascript" src="js/time.js"></script>
+
+
+	</head>
+
+	<body>
+		<!--#Header-->
+		<div id="header">
+			<div id="title">
+				我们的1000天纪念日
+			</div>
+		</div>
+
+		<!-- #myContent -->
+		<div id="myContent"></div>
+		<div id="contentToWrite" style="display:none">
+			username@SomeWhere ~ $ ssh Mike's Heart<br>
+			Login : Nicole<br>
+			password : *********<br>
+			strange happens.<br>
+			root@Mike ~ #<br>
+			今天,我们在一起已经有1000天了,其中颇多挫折,<br>
+			但是最后,我们总算还是能在一起,希望<br>
+			我们一起度过接下来的时光.<br>
+		</div>
+		<script>
+			writeContent(true);
+		</script>
+		</div>
+
+		<!-- #container -->
+		<div id="container" style="opacity: 0.85">
+			<ul id="myRoundabout">
+		  	<li><img src="images/slide1.jpg" alt=""></li>
+			<li><img src="images/slide2.jpg" alt=""></li>
+			<li><img src="images/slide5.jpg" alt=""></li>
+			<li><img src="images/slide3.jpg" alt=""></li>
+			<li><img src="images/slide4.jpg" alt=""></li>
+		  </ul>
+		</div>
+		<script>
+			setTimeout(move, 2050);
+		</script>
+  		
+  		<!-- #bg -->
+		<div id="bg">
+			<canvas id="garden"></canvas>
+		</div>
+
+		<!-- #time -->
+		<div id="time" >
+			<span id="show"></span>
+			<script type="text/javascript">
+				setTimeout(showTime, 10);
+			</script>
+		</div>
+
+		<!-- #footer-->
+		<div id="footer">
+			copyright@<a style="color: rgb(51, 153, 153);" href="http://mikecoder.net">Mike</a> 2013-5-15 Soochow University
+		</div>
+	
+	</body>
+</html>
