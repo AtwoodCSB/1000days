@@ -26,13 +26,15 @@
 		<script type="text/javascript" src="js/move.js"></script>
 		<!-- 显示时间 -->
 		<script type="text/javascript" src="js/time.js"></script>
+		<!-- 设置文字跟随鼠标 -->
+		<script type="text/javascript" src="js/makesnake.js"></script>
 
 
 	</head>
 
-	<body>
+	<body onLoad="makesnake();">
 		<!--#Header-->
-		<div id="header">
+		<div id="header" style="opacity:0.85">
 			<div id="title">
 				我们的1000天纪念日
 			</div>
@@ -41,8 +43,7 @@
 		<!-- #myContent -->
 		<div id="myContent"></div>
 		<div id="contentToWrite" style="display:none">
-			username@SomeWhDescription	Resource	Path	Location	Type
-ere ~ $ ssh Mike's Heart<br>
+			username@SomeWhere ~ $ ssh Mike's Heart<br>
 			Login : Nicole<br>
 			password : *********<br>
 			strange happens.<br>
@@ -57,7 +58,7 @@ ere ~ $ ssh Mike's Heart<br>
 		</div>
 
 		<!-- #container -->
-		<div id="container" style="opacity: 0.85">
+		<div id="container"  >
 			<ul id="myRoundabout">
 		  	<li><img src="images/slide1.jpg" alt=""></li>
 			<li><img src="images/slide2.jpg" alt=""></li>
@@ -79,13 +80,13 @@ ere ~ $ ssh Mike's Heart<br>
 		<div id="time" >
 			<span id="show"></span>
 			<script type="text/javascript">
-				setTimeout(showTime, 10);
+				setTimeout(showTime, 10000);
 			</script>
 		</div>
 
 		<!-- #footer-->
 		<div id="footer">
-			copyright@<a style="color: rgb(51, 153, 153);" href="http://mikecoder.net">Mike</a> 2013-5-15 Soochow University
+			copyright@<a style="color: rgb(1, 1, 1);" href="http://mikecoder.net">Mike</a> 2013-5-15 Soochow University
 		</div>
 	
 	</body>

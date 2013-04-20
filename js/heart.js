@@ -186,6 +186,7 @@
 
 		    $(function () {
 
+			$window = $(window);
 
 			// garden
 			var gardenCtx, gardenCanvas, $garden, garden, previewInterval;
@@ -218,42 +219,76 @@
 			//Draw My Picture
 			var r = 18;
 			var time, temp = 500;
-			var radian = Math.PI;
-			var radianDecrement = Math.PI / 370 * 2;//
+			var radian = Math.PI;//弧度
+			var radianDecrement = Math.PI / 370 * 2;;//弧度增量
 			var heartX, heartY;
-			var length = 300, width = 300;
-			//画爱心
-			for(var i=0;i<354;i++){
-					time = 25*(i + temp);
-				 if(i <= 180&&i >=205) time=280*25;
+			var LX = 700, LY = 370;
+			var URowX = LX, URowY = LY;
+			var DRowX = LX, DRowY = LY;
+			var LRollX = LX, LRollY = LY;
+			var RRollX = LX, RRollY = LY;
+			
+			for(var i=0;i<300;i++){
+				if(i <= 20 && i % 3 != 0){
+					//doNOthing				
+				}
+				time = 25*(i + temp);
+				if(i <= 180&&i >=205) time=280*25;
 					setTimeout(drawHeart, time);
 			}
-			//画矩形
-			for(var i=0;i<354;i++){
-				length = 500 + i * 20;
-				width = 500 + i * 20;
-				setTimeout(draw, 50 * i + 2000);
-			}
-				
+			
  
+			/*
+			for(var j = 0; j < 100; j++){
+				setTimeout(drawRect_URow, 40 * j + 15000);
+			}
+			
+			for(var j = 0; j < 100; j++){
+				setTimeout(drawRect_DRow, 40 * j + 40 * 65 + 15000);
+			}
+			
+			for(var j = 0; j < 20; j++){
+				setTimeout(drawRect_LRoll, 40 * j + 40 * 65 + 20000);
+			}
+			
+			for(var j = 0; j < 20; j++){
+				setTimeout(drawRect_RRoll, 40 * j + 40 * 65 + 22000);
+			}
+			*/
+			function drawRect_URow(){
+				garden.createRandomBloom(URowX, URowY);
+				URowX = URowX + 5;
+			}
+			
+			function drawRect_DRow(){
+				garden.createRandomBloom(DRowX, DRowY + 185);
+				DRowX = DRowX + 5;
+			}
+			
+			function drawRect_LRoll(){
+				garden.createRandomBloom(LRollX, LRollY);
+				LRollY = LRollY + 5;
+			}
+			
+			function drawRect_RRoll(){
+				garden.createRandomBloom(RRollX + 500, RRollY);
+				RRollY = RRollY + 5;
+			}
+			
 			function drawHeart(){
 				heartX = getX(radian);
 				heartY = getY(radian);
 				radian += radianDecrement;
-				if(!(radian<=Math.PI+205*radianDecrement&&radian>=Math.PI+180*radianDecrement))//ֻ
+				if(!(radian<=Math.PI+205*radianDecrement&&radian>=Math.PI+180*radianDecrement))//只是让变得好看
 					garden.createRandomBloom(heartX, heartY);
 			}
 
-			function getX(t) {//
+			function getX(t) {//由弧度得到 X 坐标
 				return 300+r*(16*Math.pow(Math.sin(t),3));
 			}
 			 
-			function getY(t) {//
+			function getY(t) {//由弧度得到 Y 坐标
 				return 300-r*(13*Math.cos(t)-5*Math.cos(2*t)-2*Math.cos(3*t)-Math.cos(4*t));
-			}
-			
-			function draw(){
-					garden.createRandomBloom(length, width);
 			}
 			//---------------------------------------------------------------
 		    });

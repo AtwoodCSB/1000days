@@ -27,7 +27,7 @@ function showTime() {
 	var currentTimeString = "Dear Nicole:<br>"
 		+"我们已经相恋: "+days+"天 "+hours+"小时 "+minutes+"分钟 "+seconds+"秒<br>"
 		+"未来还有更长的路,我相信我们能够继续走下去.<br>"
-		+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp----Mike<br>"
+		+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp----Mike<br>"
 		+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp----2013-5-15"; 
 	
 	document.getElementById("show").innerHTML=currentTimeString;  //改这地方
