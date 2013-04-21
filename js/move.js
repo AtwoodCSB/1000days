@@ -21,7 +21,7 @@ function move(){
           //通过top样式属性设置，必须带单位
           obj.style.top = top - num * 2 + "px";
           //计数器加一
-          obj.style.opacity =   num  / 100.0;
+          obj.style.opacity =   num  / 120.0;
           num++;
         },200);
 }

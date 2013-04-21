@@ -1,7 +1,9 @@
 
 /* Global properties ======================================================== */
 body { 
-	background:#111;
+	background:#281f1d;
+	/*background-image:url(../images/bg.jpg) ;*/ 
+	background-position: center; 
 	text-align:left;
 }
 
@@ -10,12 +12,13 @@ body {
 #header{
 	position:absolute;
 	left:0px;
-	top:15px;
+	top:5px;
 	overflow:hidden;
 	height:70px;
 	font-family:Microsoft YaHei;
 	font-weight: 900;
-	font-size:35px;
+	font-size:40px;
+	padding-bottom:5px;
 	width: 100%;
 	filter:alpha(opacity=70);
 	-moz-opacity:0.7;
@@ -27,11 +30,12 @@ body {
 	left:80px;
 	top:150px;
 	overflow:hidden;
-	text-shadow: 2px 3px 3px #222; 
-	font-family:courier;
+	text-shadow: 2px 3px 3px #666; 
+	font-family:Microsoft YaHei;
 	font-style:italic;
+	font-weight:500;
 	font-size:20px;
-	color:#DDD;
+	color:#33a3dc;
 }
 
 #container{
@@ -46,11 +50,12 @@ body {
 
 #title{
 	position:absolute;
-	left:35%;
+	left:28%;
 	top:0px;
 	padding:10px;
 	overflow:hidden;
-	color:#DDD;
+	text-shadow: 2px 3px 3px #888; 
+	color:#33a3dc;
 	filter:alpha(opacity=70);
 	-moz-opacity:0.7;
 	opacity:0.7;
@@ -58,14 +63,14 @@ body {
 
 #footer {
 	position:absolute;
-	left:35%;
+	left:32%;
 	top:95%;
 	overflow:hidden;
-	text-shadow: 2px 3px 3px #000; 
-	font-family:courier;
+	text-shadow: 2px 3px 3px #555; 
+	font-family:Microsoft YaHei;
 	font-style:italic;
 	font-size:20px;
-	color:#FFF;
+	color:#33a3dc;
 }
 
 
@@ -78,9 +83,9 @@ body {
 }
 
 #show{
-	color:#DDD;
-	text-shadow: 2px 3px 3px #222; 
-	font-family:courier;
+	color:#33a3dc;
+	text-shadow: 2px 3px 3px #555; 
+	font-family:Microsoft YaHei;
 	font-style:italic;
 	font-size:20px;
 }
@@ -121,12 +126,15 @@ img {
 }
 
 .spanstyle{
-	color:#fff000;
-	font-family:"Courier New";
-	font-size:18px;
-	font-weight:bold;
+	color:#33a3dc;
+	font-family:courier;
+	font-size:22px;
+	text-shadow: 2px 3px 3px #555; 
+	font-style:italic;
+	font-weight:600;
 	position:absolute;		/* 绝对定位 */
 	top:-50px;
+	overflow:hidden;
 }
 
 
