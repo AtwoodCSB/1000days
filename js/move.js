@@ -13,7 +13,7 @@ function move(){
         var top = 220;
         //使用定时器移动DIV
         var timer  =  setInterval(function(){ //移动的函数
-          if(num==100){ //移动100次
+          if(num==105){ //移动105次
             clearInterval(timer); 
           }
           //通过left样式属性设置。必须带单位
@@ -21,7 +21,7 @@ function move(){
           //通过top样式属性设置，必须带单位
           obj.style.top = top - num * 2 + "px";
           //计数器加一
-          obj.style.opacity =   num  / 120.0;
+          obj.style.opacity =   num  / 140.0;
           num++;
-        },200);
+        },190);
 }
