@@ -1,6 +1,6 @@
 var x,y;		//鼠标当前在页面上的位置
 var step=10;	//字符显示间距，为了好看，step=0则字符显示没有间距
-var message="Thanks for your watching!";		//跟随鼠标要显示的字符串
+var message="Thanks for watching!";		//跟随鼠标要显示的字符串
 message=message.split("");	//将字符串分割为字符数组
 
 var xpos=new Array()		//存储每个字符的x位置的数组
@@ -25,7 +25,7 @@ if (document.layers){
 
 function handlerMM(e){ //从事件得到鼠标光标在页面上的位置
 	e=e||window.event;
-	x = (document.layers) ? e.pageX : document.body.scrollLeft+e.clientX-270;
+	x = (document.layers) ? e.pageX : document.body.scrollLeft+e.clientX-220;
 	y = (document.layers) ? e.pageY : document.body.scrollTop+e.clientY-35;
 }
 
@@ -60,6 +60,6 @@ function makesnake() {  //重定位每个字符的位置
 			thisspan.top=ypos[i];
 		}
 	}
-	var timer=setTimeout("makesnake()",5)  //设置10毫秒的定时器来连续调用makesnake(),时刻刷新显示字符串的位置。
+	var timer=setTimeout("makesnake()",7)  //设置7毫秒的定时器来连续调用makesnake(),时刻刷新显示字符串的位置。
 }
 document.onmousemove = handlerMM;

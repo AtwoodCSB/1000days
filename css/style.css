@@ -1,7 +1,7 @@
 
 /* Global properties ======================================================== */
 body { 
-	background:#281f1d;
+	background:#666666;
 	background-image:url(../images/bg1.png) ;
 	background-position: center; 
 	text-align:left;
@@ -30,7 +30,7 @@ body {
 	left:80px;
 	top:150px;
 	overflow:hidden;
-	text-shadow: 2px 3px 3px #222; 
+	text-shadow: 2px 3px 3px #000; 
 	font-family:Microsoft YaHei;
 	font-style:italic;
 	font-weight:500;
@@ -123,7 +123,7 @@ img {
 }
 
 .spanstyle{
-	color:#bed742;
+	color:#CCFF99;
 	font-family:courier;
 	text-shadow: 2px 2px 1px #222; 
 	font-style:italic;

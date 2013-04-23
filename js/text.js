@@ -29,7 +29,7 @@ function writeContent(init){
 	}
 
 	if(charIndex<=stringLength){
-		setTimeout('writeContent(false)',150);
+		setTimeout('writeContent(false)',100);
 	}else{
 		blinkSpan();
 	}  
@@ -43,5 +43,5 @@ function blinkSpan(){
 		currentStyle='inline';
 	}
 	document.getElementById('blink').style.display = currentStyle;
-	setTimeout('blinkSpan()',500);
+	setTimeout('blinkSpan()',100);
 }

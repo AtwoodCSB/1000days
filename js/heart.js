@@ -224,7 +224,7 @@
 			//Draw My Picture
 			var r = 18;
 			var flag = 0;
-			var time, temp = 500;
+			var time, temp = 800;
 			var radian = Math.PI;//弧度
 			var radianDecrement = Math.PI / 370 * 2;;//弧度增量
 			var heartX, heartY;
