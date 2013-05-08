@@ -60,6 +60,6 @@ function makesnake() {  //重定位每个字符的位置
 			thisspan.top=ypos[i];
 		}
 	}
-	var timer=setTimeout("makesnake()",7)  //设置7毫秒的定时器来连续调用makesnake(),时刻刷新显示字符串的位置。
+	var timer=setTimeout("makesnake()",10)  //设置10毫秒的定时器来连续调用makesnake(),时刻刷新显示字符串的位置。
 }
 document.onmousemove = handlerMM;

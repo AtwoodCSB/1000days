@@ -1,7 +1,7 @@
 
 /* Global properties ======================================================== */
 body { 
-	background:#666666;
+	background:#6f599c;
 	background-image:url(../images/bg1.jpg) ;
 	text-align:left;
 }
@@ -27,7 +27,7 @@ body {
 #myContent{
 	position:absolute;
 	left:80px;
-	top:150px;
+	top:140px;
 	overflow:hidden;
 	text-shadow: 2px 3px 3px #000; 
 	font-family:Microsoft YaHei;
