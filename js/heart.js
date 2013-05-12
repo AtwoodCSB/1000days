@@ -242,19 +242,19 @@
  
 			
 			for(var j = 0; j < 20; j++){
-				setTimeout(drawRect_URow, 60 * j + 35000);
+				//setTimeout(drawRect_URow, 60 * j + 35000);
 			}
 			
 			for(var j = 0; j < 21; j++){
-				setTimeout(drawRect_DRow, 60 * j + 20 * 65 + 36000);
+				//setTimeout(drawRect_DRow, 60 * j + 20 * 65 + 36000);
 			}
 			
 			for(var j = 0; j < 5; j++){
-				setTimeout(drawRect_LRoll, 60 * j + 20 * 65 + 37000);
+				//setTimeout(drawRect_LRoll, 60 * j + 20 * 65 + 37000);
 			}
 			
 			for(var j = 0; j < 5; j++){
-				setTimeout(drawRect_RRoll, 60 * j + 20 * 65 + 38000);
+				//setTimeout(drawRect_RRoll, 60 * j + 20 * 65 + 38000);
 			}
 			
 			function drawRect_URow(){
