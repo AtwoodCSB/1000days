@@ -14,7 +14,7 @@ function showTime() {
 	if (seconds < 10) 
 	seconds = "0" + seconds; 
 	var currentTimeString = "Dear Nicole:<br>"
-		+ "I have fallen in love with you for:<br> "
+		+ "I have been in love with you for:<br> "
 		+ "&nbsp&nbsp&nbsp&nbsp&nbsp"
 		+ "<c style=\"color: #CCFF99; text-shadow:2px 3px 3px #222; font-family:Microsoft YaHei; font-size:24px\" >" + days +" </c>day " 
 		+ "<c style=\"color: #CCFF99; text-shadow:2px 3px 3px #222; font-family:Microsoft YaHei; font-size:24px\" >" + hours+" </c>hour "
